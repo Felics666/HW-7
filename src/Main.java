@@ -79,12 +79,18 @@ public class Main {
         System.out.println();
         System.out.println("Задача 4");
 
-        for(int i = 0; i < mas.length; i++){  /// все не четный заполняем четными
+        for(int i = 0; i < mas.length; i++){  /// все нечетный заполняем четными
             if(mas[i] % 2 != 0){
                 mas[i]++;
             }
         }
         System.out.println(Arrays.toString(mas));
 
+        for(int i = 0; i < mas3.length; i++){
+            if(mas3[i] % 2 != 0){
+                mas3[i]++;
+            }
+        }
+        System.out.println(Arrays.toString(mas3));
     }
 }
