@@ -86,7 +86,7 @@ public class Main {
         }
         System.out.println(Arrays.toString(mas));
 
-        for(int i = 0; i < mas3.length; i++){
+        for(int i = 0; i < mas3.length; i++){ /// все нечетный заполняем четными в рандомном массиве
             if(mas3[i] % 2 != 0){
                 mas3[i]++;
             }
