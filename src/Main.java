@@ -10,11 +10,11 @@ public class Main {
         ////Задача 1
         System.out.println("Задача 1");
 
-        int[] mas = new int[]{1, 2, 3}; ////массив  целочиссленый
+        int[] mas = new int[]{1, 2, 3}; ////массив  целочисленный
 
-        double[] mas2 = new double[]{2.34, 5.4, 86.5, 165.9}; ////масив дробный
+        double[] mas2 = new double[]{2.34, 5.4, 86.5, 165.9}; ////массив дробный
 
-        int[] mas3 = new int[6]; //// масив для рандомного заполнения
+        int[] mas3 = new int[6]; //// массив для рандомного заполнения
 
 
         //// Задача 2
@@ -37,10 +37,10 @@ public class Main {
         }
         System.out.println();
 
-        for (int i = 0; i < mas3.length; i++){ //// вывод трентьего массива
+        for (int i = 0; i < mas3.length; i++) { //// вывод трентьего массива
             mas3[i] = rand.nextInt(30);
             System.out.print(mas3[i]);
-            if(i != mas3.length - 1){
+            if (i != mas3.length - 1) {
                 System.out.print(", ");
             }
         }
@@ -51,25 +51,25 @@ public class Main {
         System.out.println("Задача 3");
         System.out.print("Первый масиив в обратном порядке: ");
 
-        for(int i = mas.length - 1; i >= 0; i--){
+        for (int i = mas.length - 1; i >= 0; i--) {
             System.out.print(mas[i]);
-            if(i != 0){
+            if (i != 0) {
                 System.out.print(", ");
             }
         }
         System.out.println();
         System.out.print("Второй массив в обратном порядке: ");
-        for(int i = mas2.length - 1; i >= 0; i--){
+        for (int i = mas2.length - 1; i >= 0; i--) {
             System.out.print(mas2[i]);
-            if(i != 0){
+            if (i != 0) {
                 System.out.print(", ");
             }
         }
         System.out.println();
         System.out.print("Третий массив в обратном порядке: ");
-        for(int i = mas3.length - 1; i >= 0; i--){
+        for (int i = mas3.length - 1; i >= 0; i--) {
             System.out.print(mas3[i]);
-            if(i != 0){
+            if (i != 0) {
                 System.out.print(", ");
             }
         }
@@ -79,12 +79,11 @@ public class Main {
         System.out.println();
         System.out.println("Задача 4");
 
-        for(int i = 0; i < mas.length; i++){  /// все не четный заполняем четными
-            if(mas[i] % 2 != 0){
+        for (int i = 0; i < mas.length; i++) {  /// все нечетный заполняем четными
+            if (mas[i] % 2 != 0) {
                 mas[i]++;
             }
         }
         System.out.println(Arrays.toString(mas));
-
     }
 }
